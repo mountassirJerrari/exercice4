@@ -53,7 +53,7 @@ namespace exercice4
             setY(k * this.y);
         }
         //la linearité
-        public bool islinear(Point p1, Point p2, Point p3)
+        static public bool islinear(Point p1, Point p2, Point p3)
         {
             float a = (p1.y - p2.y) / (p1.x - p2.x);
             float b = p1.y - a * p1.x;

@@ -23,6 +23,29 @@ namespace exercice4
             this.p2 = new Point(p2);
         }
         //setter and getters
-        public void setP1()
+        public void setP1(float x, float y)
+        {
+            p1.setX(x);
+            p1.setY(y);
+        }
+        public void setP2(float x, float y)
+        {
+            p2.setX(x);
+            p2.setY(y);
+        }
+        public Point getP1()
+        {
+            return p1;
+        }
+        public Point getP2()
+        {
+            return p2;
+        }
+        //egalité
+        public bool isCollinear(Droite d)
+        {
+
+        }
+
     }
 }
