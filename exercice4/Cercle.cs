@@ -39,7 +39,25 @@ namespace exercice4
         {
             return this.r;
         }
+        //egalité 
+        public bool isEqual(Cercle cercle)
+        {
+            if (this.center.isEqual(cercle.getCenter()) && r==cercle.getR())
+            {
+                return true;
+            }
+            return false;
 
+        }
+        //intersection
+        public bool isItersected(Cercle cercle)
+        {
+
+            if (Math.Sqrt((center.getX() - cercle.getCenter().getX())*(center.getX() - cercle.getCenter().getX())+ (center.getX() - cercle.getCenter().getX()) * (center.getY() - cercle.getCenter().getY()))<=r+cercle.r)   
+                    return true;
+            return false;
+
+        }
 
 
     }
