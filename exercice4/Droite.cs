@@ -44,7 +44,34 @@ namespace exercice4
         //egalité
         public bool isCollinear(Droite d)
         {
+           if (Point.islinear(this.p1, this.p2, d.p1) && Point.islinear(this.p1, this.p2, d.p2))
+            {
+                return true;
+            }
+            return false;   
 
+        }
+        //paralléle
+        public bool isParall(Droite d)
+        {
+            // a1 le coefficient directeur de la droite courant et b1 l'ordonnée à l'origine
+            float a1 = (this.p1.getY() - this.p2.getY()) / (this.p1.getX() - this.p2.getX());
+            float b1 = this.p1.getY() - a1 * this.p1.getX();
+            // a2 le coefficient directeur de la droite d et b2 l'ordonnée à l'origine
+            float a2 = (d.p1.getY() - d.p2.getY()) / (d.p1.getX() - d.p2.getX());
+            float b2 = d.p1.getY() - a2 * d.p1.getX();
+            
+            if ((a1*b2-a2*b1)==0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+        // intersection
+        public bool isIntersect(Droite d)
+        {
+            return !isParall(d);
         }
 
     }
