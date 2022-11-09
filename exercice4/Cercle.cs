@@ -58,6 +58,18 @@ namespace exercice4
             return false;
 
         }
+        //Circumference 
+        public float circumference()
+        {
+            return 3.14159265359f * 2 * r;
+
+        }
+        //aire  
+        public float aire()
+        {
+            return 3.14159265359f * r * r;
+
+        }
 
 
     }
