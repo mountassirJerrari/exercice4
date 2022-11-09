@@ -10,10 +10,15 @@ namespace exercice4
     {
         private float x, y;
         //constructeur
-        Point(float x, float y)
+        public Point(float x, float y)
         {
             this.x = x;
             this.y = y;
+        }
+        public Point(Point p)
+        {
+            this.x = p.x;
+            this.y = p.y;
         }
         //setters and getters
         public void setX(float x)
