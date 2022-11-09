@@ -21,6 +21,26 @@ namespace exercice4
             this.center = new Point(x1, y1);
             this.r = r;
         }
+        //setters and getters
+        public void setCenter(Point p)
+        {
+            this.center.setX(p.getX());
+            this.center.setY(p.getY());
+        }
+        public void setR(float r)
+        {
+            this.r = r;
+        }
+        public Point getCenter()
+        {
+            return this.center;
+        }
+        public float getR()
+        {
+            return this.r;
+        }
+
+
 
     }
 }
