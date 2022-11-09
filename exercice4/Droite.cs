@@ -74,5 +74,6 @@ namespace exercice4
             return !isParall(d);
         }
 
+
     }
 }
