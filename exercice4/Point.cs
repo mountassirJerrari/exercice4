@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace exercice3
+namespace exercice4
 {
     internal class Point
     {
